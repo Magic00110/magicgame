@@ -113,6 +113,29 @@
   height: auto;
   border-radius: 10px;
 }
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.game-item {
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  padding: 15px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+  font-weight: 600;
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+  background: #ffcc00;
+  color: #000;
+}
+
 
 @media (max-width: 600px) {
   .screenshot-frame {
@@ -127,12 +150,6 @@
     max-width: 100%;
   }
 }
-
-
-
-
-
-
     .download-btn {
       display: block;
       width: 100%;
@@ -147,28 +164,7 @@
       font-weight: bold;
       transition: background 0.3s ease;
     }
- .game-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 15px;
-      max-width: 800px;
-      margin: auto;
-    }
 
-    .game-item {
-      background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
-      padding: 15px 10px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      transition: transform 0.2s ease;
-      font-weight: 600;
-    }
-
-    .game-item:hover {
-      transform: scale(1.05);
-      background: #ffcc00;
-      color: #000;
-    }
     .download-btn:hover {
       background: #e65c00;
     }
@@ -243,7 +239,7 @@
 <body>
 
   <div class="header">
-    <h1>Enter the Magic Game – Play, Win, and Be Enchanted!</h1>
+    <h1>Successfully Completed!</h1>
     <p>Your APK is ready to download.</p>
   </div>
 
@@ -291,88 +287,36 @@
     <p>If you disagree with our terms or local laws prohibit such content, please leave the site immediately. Reproducing or copying site content is strictly forbidden.</p>
 
     <h3>📢 List Your Market</h3>
-    <p>Want to showcase your market with us?<br>
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Game List</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background: #121212;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 20px;
-      text-align: center;
-    }
+    <p>Want to showcase your market with us?<br></p>
 
-    h1 {
-      color: #ffcc00;
-      margin-bottom: 30px;
-      text-shadow: 2px 2px #000;
-    }
+    <h1 style="color:#ffcc00; text-align:center; margin: 40px 0 20px;">🎮 Explore Magic Game Markets</h1>
 
-    .game-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 15px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .game-item {
-      background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
-      padding: 15px 10px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      transition: transform 0.2s ease;
-      font-weight: 600;
-    }
-
-    .game-item:hover {
-      transform: scale(1.05);
-      background: #ffcc00;
-      color: #000;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>🎮 Explore Magic Game Markets</h1>
-
-  <div class="game-list">
-    <div class="game-item">DHAN LAXMI</div>
-    <div class="game-item">KALYAN</div>
-    <div class="game-item">KALYAN MORNING</div>
-    <div class="game-item">KALYAN NIGHT</div>
-    <div class="game-item">KUBER RATAN DAY</div>
-    <div class="game-item">KUBER RATAN MORNING</div>
-    <div class="game-item">MADHUR DAY</div>
-    <div class="game-item">MADHUR NIGHT</div>
-    <div class="game-item">MAIN BAZAR</div>
-    <div class="game-item">MILAN DAY</div>
-    <div class="game-item">MILAN MORNING</div>
-    <div class="game-item">MILAN NIGHT</div>
-    <div class="game-item">MUMBAI BAZAR</div>
-    <div class="game-item">MUMBAI BAZAR NIGHT</div>
-    <div class="game-item">RAJDHANI DAY</div>
-    <div class="game-item">RAJDHANI NIGHT</div>
-    <div class="game-item">RATAN BOMBAY DAY</div>
-    <div class="game-item">RATAN BOMBAY MORNING</div>
-    <div class="game-item">SRIDEVI</div>
-    <div class="game-item">SRIDEVI DAY</div>
-    <div class="game-item">SRIDEVI NIGHT</div>
-    <div class="game-item">SUPREME DAY</div>
-    <div class="game-item">SUPREME NIGHT</div>
-    <div class="game-item">TIME BAZAR</div>
-  </div>
-
-</body>
-</html>
-
-    </p>
-
+<div class="game-list">
+  <div class="game-item">DHAN LAXMI</div>
+  <div class="game-item">KALYAN</div>
+  <div class="game-item">KALYAN MORNING</div>
+  <div class="game-item">KALYAN NIGHT</div>
+  <div class="game-item">KUBER RATAN DAY</div>
+  <div class="game-item">KUBER RATAN MORNING</div>
+  <div class="game-item">MADHUR DAY</div>
+  <div class="game-item">MADHUR NIGHT</div>
+  <div class="game-item">MAIN BAZAR</div>
+  <div class="game-item">MILAN DAY</div>
+  <div class="game-item">MILAN MORNING</div>
+  <div class="game-item">MILAN NIGHT</div>
+  <div class="game-item">MUMBAI BAZAR</div>
+  <div class="game-item">MUMBAI BAZAR NIGHT</div>
+  <div class="game-item">RAJDHANI DAY</div>
+  <div class="game-item">RAJDHANI NIGHT</div>
+  <div class="game-item">RATAN BOMBAY DAY</div>
+  <div class="game-item">RATAN BOMBAY MORNING</div>
+  <div class="game-item">SRIDEVI</div>
+  <div class="game-item">SRIDEVI DAY</div>
+  <div class="game-item">SRIDEVI NIGHT</div>
+  <div class="game-item">SUPREME DAY</div>
+  <div class="game-item">SUPREME NIGHT</div>
+  <div class="game-item">TIME BAZAR</div>
+</div>
     <!-- 👇 Bottom Download Button (inside section, with margin) -->
     <a class="download-btn" href="./MagicGame.apk" download>Download APK Again</a>
   </div>
