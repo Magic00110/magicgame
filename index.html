@@ -147,7 +147,28 @@
       font-weight: bold;
       transition: background 0.3s ease;
     }
+ .game-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
 
+    .game-item {
+      background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+      padding: 15px 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+      font-weight: 600;
+    }
+
+    .game-item:hover {
+      transform: scale(1.05);
+      background: #ffcc00;
+      color: #000;
+    }
     .download-btn:hover {
       background: #e65c00;
     }
@@ -271,7 +292,85 @@
 
     <h3>📢 List Your Market</h3>
     <p>Want to showcase your market with us?<br>
-      <em>आपका बाज़ार यहाँ लगवाने के लिए आज ही संपर्क करें।</em>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #121212;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffcc00;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #000;
+    }
+
+    .game-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .game-item {
+      background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+      padding: 15px 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+      font-weight: 600;
+    }
+
+    .game-item:hover {
+      transform: scale(1.05);
+      background: #ffcc00;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Explore Magic Game Markets</h1>
+
+  <div class="game-list">
+    <div class="game-item">DHAN LAXMI</div>
+    <div class="game-item">KALYAN</div>
+    <div class="game-item">KALYAN MORNING</div>
+    <div class="game-item">KALYAN NIGHT</div>
+    <div class="game-item">KUBER RATAN DAY</div>
+    <div class="game-item">KUBER RATAN MORNING</div>
+    <div class="game-item">MADHUR DAY</div>
+    <div class="game-item">MADHUR NIGHT</div>
+    <div class="game-item">MAIN BAZAR</div>
+    <div class="game-item">MILAN DAY</div>
+    <div class="game-item">MILAN MORNING</div>
+    <div class="game-item">MILAN NIGHT</div>
+    <div class="game-item">MUMBAI BAZAR</div>
+    <div class="game-item">MUMBAI BAZAR NIGHT</div>
+    <div class="game-item">RAJDHANI DAY</div>
+    <div class="game-item">RAJDHANI NIGHT</div>
+    <div class="game-item">RATAN BOMBAY DAY</div>
+    <div class="game-item">RATAN BOMBAY MORNING</div>
+    <div class="game-item">SRIDEVI</div>
+    <div class="game-item">SRIDEVI DAY</div>
+    <div class="game-item">SRIDEVI NIGHT</div>
+    <div class="game-item">SUPREME DAY</div>
+    <div class="game-item">SUPREME NIGHT</div>
+    <div class="game-item">TIME BAZAR</div>
+  </div>
+
+</body>
+</html>
+
     </p>
 
     <!-- 👇 Bottom Download Button (inside section, with margin) -->
